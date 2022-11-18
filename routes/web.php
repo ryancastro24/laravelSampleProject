@@ -30,6 +30,7 @@ Route::patch("/{id}", [PostController::class, 'update'])->name('blog.update');
 });
 
 
+
 // Route::delete("/blog{id}", [PostController::class, 'destroy'])->name('blog.destroy');
 //Route::resource('blog', PostController::class);
 
