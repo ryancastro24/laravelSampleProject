@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Post;
+use App\Models\Blog;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,7 +19,9 @@ class DatabaseSeeder extends Seeder
 
         $this->call(PostTableSeeder::class);
         Post::factory(100)->create([
-            'body' => 'overiding the body'
-        ]);
+           'body' => 'overiding the body'
+       ]);
+     
+
     }
 }
