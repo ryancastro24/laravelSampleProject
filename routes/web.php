@@ -26,13 +26,11 @@ Route::get("/create", [PostController::class, 'create'])->name('blog.create');
 Route::post("/", [PostController::class, 'store'])->name('blog.store');
 Route::get("/edit/{id}", [PostController::class, 'edit'])->name('blog.edit');
 Route::patch("/{id}", [PostController::class, 'update'])->name('blog.update');
+Route::delete("/{id}", [PostController::class, 'destroy'])->name('blog.destroy');
 
 });
 
 
-
-// Route::delete("/blog{id}", [PostController::class, 'destroy'])->name('blog.destroy');
-//Route::resource('blog', PostController::class);
 
 //Route::view('/blog','blog.index',["ryan" => "programmer"]);
 
